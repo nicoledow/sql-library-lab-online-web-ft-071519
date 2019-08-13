@@ -1,2 +1,2 @@
 UPDATE characters
-SET name = "Martian" WHERE name = "Cyclon";
+SET name = "Martian" WHERE name = "cyclon";
