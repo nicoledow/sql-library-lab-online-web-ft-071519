@@ -1,3 +1,2 @@
 UPDATE characters
-SET name = "Martian"
-HAVING characters.id = MAX(characters.id);
+SET name = "Martian" WHERE name = "Cyclon";
