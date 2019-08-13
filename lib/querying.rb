@@ -39,5 +39,10 @@ ORDER BY COUNT(characters.species = 'human') DESC LIMIT 1;"
 end
 
 def select_character_names_and_number_of_books_they_are_in
-  "Write your SQL query here"
+  " SELECT characters.name, COUNT(*) AS num_of_books
+    FROM character_books 
+    JOIN characters 
+    ON character_books.character_id = characters.id 
+    GROUP BY characters.name 
+    ORDER BY num_of_books DESC;"
 end
