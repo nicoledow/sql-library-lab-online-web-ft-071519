@@ -1,3 +1,3 @@
 UPDATE characters
 SET name = "Martian"
-HAVING id = MAX(id);
+WHERE id=(SELECT max(id) FROM characters);
